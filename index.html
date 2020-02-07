@@ -6,38 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="William Nisbett's personal website">
     <meta name="keywords" content="william nisbett, billy nisbett, website, physics, data science, machine learning, wushu, imaging physics, university of houston">
-    <link rel="stylesheet" href="static/css/style.css">
     <title>William Nisbett</title>
-</head>
-<body>
-    <div class="content proximity-scroll">
-        <section class="landing-page" id="landing">
-            <h1>Placeholder for landing page</h1>
-        </section>
 
-        <div class="menu sticky" id="stick navbar">
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+
+<body>
+    <section class="snap-scroll" id="landing">
+        <div class="content reveal">
+            <h1>Placeholder for landing page</h1>
+        </div>
+    </section>
+
+    <section class="snap-scroll" id="sticky-navbar">
+        <div class="sticky reveal">
             <h1>Placeholder for nav bar</h1>
         </div>
-
-        <section class="about-me" id="about-me">
-            <h1>Placeholder for about me</h1>
-        </section>
-
-        <section class="timeline" id="timeline">
-            <h1>Placeholder for timeline</h1>
-        </section>
-
-        <section class="projects" id="projects">
-            <h1>Placeholder for projects list</h1>
-        </section>
-        
-        <section class="hobbies" id="hobbies">
-            <h1>Placeholder for hobbies/extracurriculars</h1>
-        </section>
-
-        <section class="footer" id="footer">
-            <h1>Placholder for the footer (github, linkedin, etc.)</h1>
     </section>
-    </div>
+
+        <section class="snap-scroll" id="about-me">
+        <div class="content reveal">
+            <h1>Placeholder for about me</h1>
+        </div>
+    </section>
+
+    <section class="snap-scroll" id="timeline"> 
+        <div class="content reveal">
+            <h1>Placeholder for timeline</h1>
+        </div>
+    </section>
+
+    <section class="snap-scroll" id="projects">
+        <div class="content reveal">
+            <h1>Placeholder for projects list</h1>
+        </div>
+    </section>
+
+    <section class="snap-scroll" id="hobbies">
+        <div class="content reveal">
+            <h1>Placeholder for hobbies/extracurriculars</h1>
+        </div>
+    </section>
+    
+    <section class="footer" id="footer">
+        <h1>Placholder for the footer (github, linkedin, etc.)</h1>
+    </section>
+    <script>
+        var slideUp = {
+            distance: '30%',
+            origin: 'bottom',
+            delay: 500,
+            duration: 700,
+            easing: 'ease',
+            opacity: 0,
+            reset: true
+        };
+
+        ScrollReveal().reveal('.reveal', slideUp);
+    </script>
 </body>
 </html>

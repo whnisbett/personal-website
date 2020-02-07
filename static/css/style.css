@@ -1,11 +1,22 @@
-.proximity-scroll {
-    height: 100vh;
-    overflow: scroll;
-    scroll-snap-type: y proximity;
+body {
+    background-color: cornflowerblue;
+    scroll-snap-type: y mandatory;
 }
 
-section {
+.snap-scroll {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
     scroll-snap-align: start;
     background-color: coral;
-    height: 1000px;
+}
+
+.reveal {
+    padding: 4vw;
+    width: 40vw;
+    background: white;
+    border-radius: 7px;
+    cursor: pointer;
 }
