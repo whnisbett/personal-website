@@ -8,57 +8,76 @@
     <meta name="keywords" content="william nisbett, billy nisbett, website, physics, data science, machine learning, wushu, imaging physics, university of houston">
     <title>William Nisbett</title>
 
+    <link rel="stylesheet" href="static/css/normalize.css">
     <link rel="stylesheet" href="static/css/style.css">
+    <script src="static/js/script.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 
 </head>
 
 <body>
-    <section class="snap-scroll" id="landing">
-        <div class="content reveal">
-            <h1>Placeholder for landing page</h1>
+    <div class="menu">
+        <div class="menu-item logo">William Nisbett</div>
+        <div class="menu-item nav-bar" id="main-navbar">
+            <a href="#landing">Home</a>
+            <a href="#about-me">About</a>
+            <a href="#timeline">Timeline</a>
+            <a href="#projects">Projects</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#footer">Contact</a>
         </div>
-    </section>
+    </div>  
 
-    <section class="snap-scroll" id="sticky-navbar">
-        <div class="sticky reveal">
-            <h1>Placeholder for nav bar</h1>
-        </div>
-    </section>
+    <div class="container" id="landing">
+        <h1>Placeholder for landing page</h1>
+    </div>
 
-        <section class="snap-scroll" id="about-me">
-        <div class="content reveal">
+    <div class="nav-bar sticky" id="sticky-navbar">
+        <a href="#landing">Home</a>
+        <a href="#about-me">About</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#projects">Projects</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#footer">Contact</a>
+    </div>
+
+    <div class="section container" id="about-me">
+        <div class="reveal content container">
             <h1>Placeholder for about me</h1>
         </div>
-    </section>
+    </div>
 
-    <section class="snap-scroll" id="timeline"> 
-        <div class="content reveal">
+    <div class="section container" id="timeline"> 
+        <div class="reveal content container">
             <h1>Placeholder for timeline</h1>
         </div>
-    </section>
+    </div>
 
-    <section class="snap-scroll" id="projects">
-        <div class="content reveal">
+    <div class="section container" id="projects">
+        <div class="reveal content container">
             <h1>Placeholder for projects list</h1>
         </div>
-    </section>
+    </div>
 
-    <section class="snap-scroll" id="hobbies">
-        <div class="content reveal">
+    <div class="section container" id="hobbies">
+        <div class="reveal content container">
             <h1>Placeholder for hobbies/extracurriculars</h1>
         </div>
-    </section>
+    </div>
     
-    <section class="footer" id="footer">
-        <h1>Placholder for the footer (github, linkedin, etc.)</h1>
-    </section>
+    <div id="footer">
+        <a href="mailto:william.nisbett@gmail.com">Email</a>
+        <a href="static/resume.pdf">Resume</a>
+        <a href="https://www.linkedin.com/in/williamhnisbett/">Linkedin</a>
+        <a href="https://github.com/whnisbett">Github</a>
+        <a href="http://www.google.com">Stack overflow??</a>
+    </div>
     <script>
         var slideUp = {
-            distance: '30%',
+            distance: '20%',
             origin: 'bottom',
-            delay: 500,
-            duration: 700,
+            delay: 200,
+            duration: 400,
             easing: 'ease',
             opacity: 0,
             reset: true
