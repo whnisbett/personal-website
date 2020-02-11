@@ -1,33 +1,15 @@
 /*GENERAL STYLES*/
+@import url('https://fonts.googleapis.com/css?family=Timmana|Josefin+Sans&display=swap');
+
 html {
     scroll-behavior: smooth;
     background-color: cornflowerblue;
 }
 
-/*SECTION STYLES*/
-div.section {
-    margin-top: 20px;
-    height: 700px;
-    background-color: coral;
-}
-
-#landing {
-    background-color: green;
-    height: 95vh;
-    width: 100%;
-}
-
-.container {
+.centered-flexbox {
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.content {
-    background: white;
-    border-radius: 7px;
-    width: 90%;
-    height: 60%;
+    justify-content: center;
 }
 
 .reveal {
@@ -35,53 +17,92 @@ div.section {
     box-shadow: -7px 3px 18px 0px rgba(0,0,0,0.4);
 }
 
+/*SECTION STYLES*/
+div.section {
+    height: 700px;
+    background-color: coral;
+}
+
+#home {
+    background-color: green;
+    height: 95vh;
+}
+
+.content {
+    background: white;
+    border-radius: 10px;
+    width: 90%;
+    height: 60%;
+}
+
+
 /*NAVBARS*/
 
 /*navbar elements*/
 .nav-bar {
-    height: 40px;
-    display: flex;
     justify-content: space-evenly;
 }
 
-.nav-bar a {
-    color: #f2f2f2;
-    text-align: center;
+.button {
+    color: black;
     text-decoration: none;
-    font-size: 17px;
-    padding: 10px;
+    padding: 0px 10px 0px 10px;
+    font-family: 'Timmana', sans-serif;
+    font-size: 15pt;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/*main navbar*/
 .menu {
+    /* MENU = LOGO + NAVBAR*/
+    height: 75px;
     background-color: rgba(150,150,150,0.6);
-    display: flex;
-    align-content: flex-start;
     justify-content: space-between;
-    min-width: 0px;
 }
 
 .logo {
-    padding: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20pt;
+    margin: 0px 0px 0px 10%;
+    flex: 0 0 auto;
 }
 
-#main-navbar {
-    flex: 0 1 auto;
-    min-width: 0;
+.nav-bar {
+    margin-right: 10%;
 }
 
-.menu-item{
-    margin: 0 5px;
+.menu-item {
+    /* LOGO AND NAVBAR (AKA ANYTHING IN THE MENU) */
+    height: 100%
 }
 
 /*sticky navbar*/
 
 @media (min-height: 300px) {
-#sticky-navbar {
+#sticky-menu {
       position: sticky;
       top: 0;
-      background-color: rgba(150,150,150,0.6);
-      width: 100%;
       z-index: 9;
     }
+  }
+
+#sticky-menu {
+    background-color: rgba(150,150,150,0.6);
+}
+
+.hvr-fade {
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+  }
+  .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+    background-color: red;
+    color: white;
   }
